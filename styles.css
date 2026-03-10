@@ -617,15 +617,7 @@ a { color: inherit; text-decoration: none; }
   display: flex;
   align-items: center;
 }
-.postit-wall-photo > img {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center 30%;
-  display: block;
-}
+/* background-image used inline on .postit-wall-photo instead of img tag */
 .postit-wall-overlay {
   position: absolute;
   inset: 0;
@@ -1881,4 +1873,24 @@ footer {
 .t-play-overlay:hover .t-play-circle {
   transform: scale(1.1);
   background: var(--blue);
+}
+
+/* ── CLEAN IFRAME VIDEO EMBEDS ── */
+.t-iframe-wrap {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  background: #000;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+.t-iframe-wrap iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
 }
