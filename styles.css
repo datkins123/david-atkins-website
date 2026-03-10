@@ -1161,6 +1161,8 @@ a { color: inherit; text-decoration: none; }
   cursor: pointer;
   transition: border-color 0.2s;
   text-decoration: none;
+  position: relative;
+  overflow: hidden;
 }
 .t-video-thumb:hover { border-color: var(--blue); }
 .play-btn {
